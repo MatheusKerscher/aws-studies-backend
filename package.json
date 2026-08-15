@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "node scripts/dev.js",
-    "start": "node --watch index.ts",
+    "start": "tsx watch index.ts",
     "services:up": "docker compose -f infra/docker/compose.yaml up -d",
     "services:stop": "docker compose -f infra/docker/compose.yaml stop",
     "services:down": "docker compose -f infra/docker/compose.yaml down",

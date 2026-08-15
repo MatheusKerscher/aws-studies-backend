@@ -1,5 +1,5 @@
 import { Router } from "express";
-import musicRoutes from "./music/index.ts";
+import musicRoutes from "./music";
 
 const routes = Router();
 

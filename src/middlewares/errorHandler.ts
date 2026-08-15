@@ -1,6 +1,7 @@
 import { type Request, type Response, type NextFunction } from "express";
-import { ValidationError } from "../errors/validationError.ts";
-import { InternalServerError } from "../errors/internalServerError.ts";
+
+import { InternalServerError } from "@/errors/internalServerError";
+import { ValidationError } from "@/errors/validationError";
 
 const errorHandler = async (
   error: Error,

@@ -1,7 +1,7 @@
 import type { Request, Response } from "express";
 
-import musicService from "../../services/music/index.ts";
-import type { CreateMusicProps } from "../../types/music/type";
+import type { CreateMusicProps } from "@/types/music/type";
+import musicService from "@/services/music";
 
 const getAllMusics = async (req: Request, res: Response) => {
   try {

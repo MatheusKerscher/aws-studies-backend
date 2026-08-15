@@ -1,6 +1,6 @@
 import { Router } from "express";
 
-import musicController from "../../controllers/music/index.ts";
+import musicController from "@/controllers/music";
 
 const musicRoutes = Router();
 

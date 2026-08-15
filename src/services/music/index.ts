@@ -1,7 +1,8 @@
 import type { Music } from "../../../infra/prisma/generated/prisma/client";
-import { ValidationError } from "../../errors/validationError.ts";
-import prisma from "../../lib/prisma.ts";
-import type { CreateMusicProps } from "../../types/music/type";
+
+import prisma from "@/lib/prisma";
+import type { CreateMusicProps } from "@/types/music/type";
+import { ValidationError } from "@/errors/validationError";
 
 const listAllMusics = async (): Promise<Music[]> => {
   try {
