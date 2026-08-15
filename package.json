@@ -11,7 +11,9 @@
     "services:stop": "docker compose -f infra/docker/compose.yaml stop",
     "services:down": "docker compose -f infra/docker/compose.yaml down",
     "migrations:create": "npx prisma migrate dev",
-    "migrations:generate": "npx prisma generate"
+    "migrations:generate": "npx prisma generate",
+    "build": "tsup index.ts --format esm --clean",
+    "build:start": "node dist/index.js"
   },
   "keywords": [
     "AWS",
@@ -34,6 +36,7 @@
     "@types/node": "26.2.0",
     "@types/pg": "8.21.0",
     "prisma": "7.9.1",
+    "tsup": "8.5.1",
     "tsx": "4.23.11",
     "typescript": "7.0.2"
   }
